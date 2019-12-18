@@ -41,6 +41,34 @@ app.post("/pharmacies", function(req, res) {
     });
 });
 
+app.delete("/pharmacies/:id", function (req, res){
+    const id = req.params.id;
+    const sql = "DELETE FROM pharmacies WHERE id = ?";
+    connection.query(sql, [id], function (err, data){
+        if(err){
+            res.status(5000).json({error: err});
+        }else{
+            res.sendStatus(200)
+        }
+    });
+});
+
+app.put("/pharmacies/:id", function (req, res){
+    const id = req.params.id;
+    const pharmacy = req.body;
+    const sql = "UPDATE pharmacies SET name = ?, town = ?, late = ?, vaccine = ?, delivery = ?, e_pres = ?, location = ?, date = ? WHERE id =?";
+    const values = [pharmacy.name, pharmacy.town, pharmacy.late, pharmacy.vaccine, pharmacy.delivery, pharmacy.e_pres, pharmacy.location, pharmacy.date, id];
+    connection.query(sql, values, function (err, data){
+        if (err){
+            res.status(500).json({error: err});
+
+        }else{
+            res.status(205).json({pharmacy: data});
+        }
+    });
+
+});
+
 module.exports.pharmacies = serverless(app);
 
 

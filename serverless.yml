@@ -24,13 +24,13 @@ functions:
           path: pharmacies
           method: post
           cors: true
-      # - http: 
-      #     path: pharmacies/{id}
-      #     method: put
-      #     cors: true
-      # - http:
-      #     path: pharmacies/{id}
-      #     method: delete
-      #     cors: true
+      - http: 
+          path: pharmacies/{id}
+          method: put
+          cors: true
+      - http:
+          path: pharmacies/{id}
+          method: delete
+          cors: true
 
 
