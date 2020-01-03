@@ -45,6 +45,7 @@ Will create a new pharmacy when sent a JSON payload in the format:
     "vaccine": 0,
     "delivery": 0,
     "e_pres": 1,
+    "comments": "max 160 characters comments box",
     "date": "2019-10-15"   
 }
 ```
@@ -73,6 +74,7 @@ Will update a pharmacy when sent a JSON payload in the format:
     "vaccine": 1,
     "delivery": 0,
     "e_pres": 1,
+    "comments": "optional comments box",
     "date": "2020-01-03"
 }
 ```
