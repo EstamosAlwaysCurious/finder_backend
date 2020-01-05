@@ -2,7 +2,7 @@
 
 This is the back end API of a Finder Application, built as the final project for the [Tech Returners](https://techreturners.com) Your Journey Into Tech course. It is consumed by a front end React application, available [here](https://github.com/EstamosAlwaysCurious/finder) and connects to an RDS Database.
 
-The hosted version of the application is available here: [https://github.com/whatever-link-here](https://github.com/whatever-link-here).
+The hosted version of the application is available here: [https://EstamosAlwaysCurious.github.io/finder/](https://EstamosAlwaysCurious.github.io/finder/)
 
 ### Technology Used
 
@@ -25,7 +25,7 @@ The API exposes the following endpoints:
 
 ##### GET /pharmacies
 
-[https://e1vex1qne1.execute-api.eu-west-1.amazonaws.com/dev/pharmacies](https://e1vex1qne1.execute-api.eu-west-1.amazonaws.com/dev/pharmacies)
+**************************amazonaws.****/dev/pharmacies/
 
 Responds with JSON containing all pharmacies in the database.
 
@@ -33,7 +33,7 @@ Responds with JSON containing all pharmacies in the database.
 
 ##### POST /pharmacies
 
-[https://e1vex1qne1.execute-api.eu-west-1.amazonaws.com/dev/pharmacies/](https://e1vex1qne1.execute-api.eu-west-1.amazonaws.com/dev/pharmacies/)
+**************************amazonaws.****/dev/pharmacies/
 
 Will create a new pharmacy when sent a JSON payload in the format:
 
@@ -54,7 +54,7 @@ Will create a new pharmacy when sent a JSON payload in the format:
 
 ##### DELETE /pharmacies/:id
 
-[https://e1vex1qne1.execute-api.eu-west-1.amazonaws.com/dev/pharmacies/:id](https://e1vex1qne1.execute-api.eu-west-1.amazonaws.com/dev/pharmacies/:id)
+**************************amazonaws.****/dev/pharmacies/:id
 
 Deletes the pharmacy of the given ID.
 
@@ -62,7 +62,7 @@ Deletes the pharmacy of the given ID.
 
 ##### PUT /tasks/:taskId
 
-[https://e1vex1qne1.execute-api.eu-west-1.amazonaws.com/dev/pharmacies/:id](https://e1vex1qne1.execute-api.eu-west-1.amazonaws.com/dev/pharmacies/:id)
+**************************amazonaws.****/dev/pharmacies/:id
 
 Will update a pharmacy when sent a JSON payload in the format:
 
